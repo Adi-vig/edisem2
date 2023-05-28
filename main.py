@@ -3,7 +3,7 @@ import pickle
 import cvzone
 import numpy as np
 import requests
-
+# import qrgen
 
 # Video feed
 cap = cv2.VideoCapture(1)
@@ -105,6 +105,8 @@ while True:
     
     
     
+    
+    
     # cv2.imshow("ImageBlur", imgBlur)
     # cv2.imshow("ImageThres", imgDilate)
-    cv2.waitKey(10)
+    cv2.waitKey(20)

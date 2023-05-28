@@ -29,7 +29,8 @@ def video():
 
 @app.route('/')
 def index():
-    return '<meta http-equiv="refresh" content="3">image:<br><img src="/video">'
+    return ' image:<br><img src="/video">'
+    # return '<meta http-equiv="refresh" content="3"> image:<br><img src="/video">'
 
 if __name__ == "__main__":
     app.run(debug=True)
