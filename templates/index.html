@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Live camera Feed</title>
+</head>
+
+
+
+<style>
+    #title1 {
+        font-size: large;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+    #back {
+        margin: 20px;
+        /* padding:30px; */
+        min-height: fit-content;
+        height: 85vh;
+
+        padding: 30px;
+        border-style: dashed;
+        border-radius: 30px;
+        border-color: blue;
+        border-width: 10px;
+    }
+
+
+    #feed {
+        text-align: center;
+        margin: 20px;
+        /* align-content: center; */
+        /* width: fit-content; */
+
+        /* padding: 30px; */
+        border-style: solid;
+        border-radius: 10px;
+        border-color: rgb(128, 128, 128);
+        border-width: 3px;
+        background-color: rgb(226, 255, 243);
+    }
+
+    img {   
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: rgb(255, 32, 240);
+        border-width: 3px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+
+
+
+
+<body style="background-color: rgb(255, 252, 229);">
+
+
+    <div id="back"> 
+        <div id="title1">
+            Live feed of Parking Lot
+        </div>
+        <div id="feed">
+            <img  src="/video">
+            <!-- <img src="{{ url_for('static', filename='images/altimage.png') }}"> -->
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 from flask import Flask, make_response, render_template, request, Response
+import os
 
 app = Flask(__name__)
 
@@ -29,7 +30,14 @@ def video():
 
 @app.route('/')
 def index():
-    return ' image:<br><img src="/video">'
+    # return ' image:<br><img src="/video">'
+    
+    # UPLOAD_FOLDER = "/images"
+    # full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'altimage.png')
+    # return render_template('index.html', user_image = full_filename)
+    
+    
+    return render_template('index.html')
     # return '<meta http-equiv="refresh" content="3"> image:<br><img src="/video">'
 
 if __name__ == "__main__":
