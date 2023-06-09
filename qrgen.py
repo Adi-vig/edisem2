@@ -35,7 +35,7 @@ cv.waitKey(500)
 
 img = cv.imread('qr.png')
 while True:
-    cv.imshow("QR", img)
-    cv.setMouseCallback("QR", mouseClick)
+    cv.imshow("SCAN QR", img)
+    cv.setMouseCallback("SCAN QR", mouseClick)
     cv.waitKey(10)
 # qrfunc()

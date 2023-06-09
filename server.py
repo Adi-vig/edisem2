@@ -41,4 +41,4 @@ def index():
     # return '<meta http-equiv="refresh" content="3"> image:<br><img src="/video">'
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
